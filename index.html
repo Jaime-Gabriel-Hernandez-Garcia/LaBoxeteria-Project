@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+	<title>LA BOXETERIA · Fábrica de Cajas de Cartón en CDMX</title>
+	<meta name="description" content="Fabricamos cajas de cartón corrugado, cajas autoarmables para e-commerce, cajas sorpresa y bolsas kraft. Venta directa de taller en GAM, Ciudad de México." />
+	
+	<!-- Favicon -->
+	<link rel="icon" type="image/jpeg" href="public/img/laboxeteria.jpg" />
+	
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+	
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="public/css/styles.css" />
+</head>
+
+<body>
+	<!-- TOP TICKER TAPE -->
+	<div class="hazard-ticker">
+		<div class="ticker-track">
+			<span>LA BOXETERIA • TALLER DE EMPAQUES EN CDMX • CARTÓN CORRUGADO • BOLSAS KRAFT • VENTA DIRECTA DESDE 50 PIEZAS • WHATSAPP: 56 2580 9077 • SAN FELIPE DE JESÚS, GAM • </span>
+			<span>LA BOXETERIA • TALLER DE EMPAQUES EN CDMX • CARTÓN CORRUGADO • BOLSAS KRAFT • VENTA DIRECTA DESDE 50 PIEZAS • WHATSAPP: 56 2580 9077 • SAN FELIPE DE JESÚS, GAM • </span>
+		</div>
+	</div>
+
+	<!-- NAV BAR: BOLD INDUSTRIAL HEADER -->
+	<header class="poster-nav">
+		<div class="nav-container">
+			<a href="#inicio" class="poster-brand">
+				<img src="public/img/laboxeteria.jpg" alt="Logotipo La Boxeteria" class="brand-seal" width="56" height="56" />
+				<div class="brand-copy">
+					<span class="brand-logo-text">LA BOXETERIA</span>
+					<span class="brand-locality">TALLER CDMX • GAM</span>
+				</div>
+			</a>
+
+			<nav class="nav-links-desktop" aria-label="Navegación del sitio">
+				<a href="#catalogo" class="nav-pill">Catálogo</a>
+				<a href="#calculador" class="nav-pill">Cotizador</a>
+				<a href="#taller" class="nav-pill">El Taller</a>
+				<a href="#faq" class="nav-pill">Preguntas</a>
+				<a href="#ubicacion" class="nav-pill">Ubicación</a>
+			</nav>
+
+			<div class="nav-action-wrap">
+				<a href="https://wa.me/525625809077?text=Hola%20La%20Boxeteria,%20quisiera%20cotizar%20cajas" target="_blank" rel="noopener noreferrer" class="btn-yellow-cta">
+					<span>WhatsApp: 56 2580 9077</span>
+					<svg class="svg-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+				</a>
+
+				<!-- Mobile Hamburger Button -->
+				<button type="button" id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Abrir menú de navegación" aria-expanded="false">
+					<span class="hamburger-line"></span>
+					<span class="hamburger-line"></span>
+					<span class="hamburger-line"></span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<!-- MOBILE DRAWER & OVERLAY -->
+	<div id="mobile-drawer-overlay" class="mobile-drawer-overlay"></div>
+	<nav id="mobile-drawer" class="mobile-drawer" aria-label="Menú móvil">
+		<div class="mobile-drawer-header">
+			<div class="brand-copy">
+				<span class="brand-logo-text">LA BOXETERIA</span>
+				<span class="brand-locality">FÁBRICA GAM · CDMX</span>
+			</div>
+		</div>
+		<div class="mobile-drawer-nav">
+			<a href="#inicio" class="mobile-drawer-link">Inicio</a>
+			<a href="#calculador" class="mobile-drawer-link">Cotizador de Cajas</a>
+			<a href="#catalogo" class="mobile-drawer-link">Catálogo de Productos</a>
+			<a href="#taller" class="mobile-drawer-link">El Taller</a>
+			<a href="#faq" class="mobile-drawer-link">Preguntas Frecuentes</a>
+			<a href="#ubicacion" class="mobile-drawer-link">Ubicación y Entregas</a>
+		</div>
+		<div class="mobile-drawer-footer">
+			<a href="https://wa.me/525625809077?text=Hola%20La%20Boxeteria,%20quisiera%20cotizar%20un%20pedido" target="_blank" rel="noopener noreferrer" class="btn-yellow-cta full-width">
+				<svg class="wa-icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.187-2.59-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.075-2.22-.562-1.821-.762-2.996-2.614-3.087-2.734-.09-.12-.738-.981-.738-1.872 0-.891.468-1.328.634-1.507.167-.18.365-.225.486-.225.122 0 .243.002.35.006.113.005.263-.042.412.316.155.375.529 1.29.575 1.385.047.094.078.204.016.326-.063.123-.094.2-.187.311-.094.113-.197.251-.282.338-.094.094-.191.196-.082.383.109.188.483.797 1.037 1.289.712.635 1.312.831 1.499.925.187.093.297.078.406-.047.11-.125.469-.546.594-.734.125-.187.25-.156.422-.093.172.062 1.09.514 1.277.608.188.094.312.14.359.219.047.078.047.453-.097.858z"/></svg>
+				<span>WhatsApp: 56 2580 9077</span>
+			</a>
+			<span class="mobile-taller-note">San Felipe de Jesús, GAM, CDMX</span>
+		</div>
+	</nav>
+
+	<main>
+		<!-- HERO SECTION: FULL BLEED YELLOW POSTER WITH MASSIVE GRAPHIC TYPE -->
+		<section id="inicio" class="poster-hero">
+			<div class="hero-poster-inner">
+				<div class="hero-copy-column">
+					<div class="hero-stamp-header">
+						<span>FABRICANTES DIRECTOS EN CIUDAD DE MÉXICO</span>
+					</div>
+
+					<h1 class="hero-giant-title">
+						FABRICAMOS<br />CAJAS.
+					</h1>
+
+					<p class="hero-manifesto">
+						Cajas de cartón corrugado de alta resistencia, cajas para e-commerce, cajas sorpresa y bolsas kraft. Trato directo de taller desde 50 piezas para emprendedores y marcas de todo México.
+					</p>
+
+					<div class="hero-button-deck">
+						<a href="#calculador" class="poster-btn-black">
+							<span>Cotizar Pedido en Línea</span>
+							<svg class="svg-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+						</a>
+						<a href="https://wa.me/525625809077?text=Hola%20La%20Boxeteria,%20quisiera%20atención%20personalizada" target="_blank" rel="noopener noreferrer" class="poster-btn-white">
+							<span>Hablar con Fábrica por WhatsApp</span>
+						</a>
+					</div>
+
+					<div class="hero-specs-tape">
+						<div class="spec-tape-item">
+							<strong>CALIBRE REAL</strong>
+							<span>Cartón corrugado Flauta C</span>
+						</div>
+						<div class="spec-tape-item">
+							<strong>TALLER PROPIO</strong>
+							<span>San Felipe de Jesús, GAM</span>
+						</div>
+						<div class="spec-tape-item">
+							<strong>100% RECICLABLE</strong>
+							<span>Fibras biodegradables</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Hero Visual Collage Frame -->
+				<div class="hero-photo-column">
+					<div class="hero-media-plinth">
+						<img src="public/img/box_ecommerce.jpg" alt="Pila de cajas de cartón kraft fabricadas en La Boxeteria" class="plinth-img" width="680" height="520" />
+						
+						<!-- Physical Kraft Dispatch Label -->
+						<div class="dispatch-badge-overlay">
+							<div class="badge-header-strip">
+								<span>LA BOXETERIA · ORDEN DE TALLER</span>
+							</div>
+							<div class="badge-body-content">
+								<span class="badge-spec-line">ESTIBADO DE ALTA RESISTENCIA</span>
+								<span class="badge-spec-line">APTO MERCADO LIBRE / AMAZON</span>
+								<span class="badge-barcode">|||||| |||| |||||||| ||||| |||||||</span>
+								<span class="badge-origin">HECHO EN CDMX, MÉXICO</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SECTION 2: INTERACTIVE "PROBADOR Y COTIZADOR DE CAJAS" -->
+		<section id="calculador" class="selector-section">
+			<div class="container">
+				<div class="selector-header-block">
+					<h2 class="selector-title">Elige qué vas a empacar</h2>
+					<p class="selector-subtitle">
+						Selecciona tu tipo de producto y calcula el costo exacto con descuento por volumen o solicita medidas a la medida.
+					</p>
+				</div>
+
+				<!-- Visual Category Tabs (No emojis as UI) -->
+				<div class="category-switch-deck" role="tablist">
+					<button class="cat-pill active" data-pack="envio" role="tab" aria-selected="true">
+						<span>Cajas de Envío (E-Commerce)</span>
+					</button>
+					<button class="cat-pill" data-pack="sorpresa" role="tab" aria-selected="false">
+						<span>Cajas Sorpresa (Mystery Box)</span>
+					</button>
+					<button class="cat-pill" data-pack="alimentos" role="tab" aria-selected="false">
+						<span>Alimentos & Pizza</span>
+					</button>
+					<button class="cat-pill" data-pack="kraft" role="tab" aria-selected="false">
+						<span>Bolsas Kraft con Asa</span>
+					</button>
+				</div>
+
+				<!-- Interactive Packaging Workbench Card -->
+				<div class="workbench-card">
+					<div class="workbench-grid">
+						<!-- Visual Photo Showcase -->
+						<div class="workbench-media">
+							<img id="workbench-img" src="public/img/box_ecommerce.jpg" alt="Cajas de cartón corrugado para envíos" class="workbench-photo" />
+							<div class="workbench-tag-bar">
+								<span id="pack-name-pill" class="pack-badge">Línea E-Commerce Autoarmable</span>
+								<span id="pack-badge-feat" class="pack-feat">Flauta C • Doble pared lateral</span>
+							</div>
+						</div>
+
+						<!-- Live Configuration Controls -->
+						<div class="workbench-controls">
+							<h3 id="pack-display-title" class="pack-title">Caja Corrugada Autoarmable</h3>
+							<p id="pack-display-desc" class="pack-lead">
+								La favorita para tiendas en línea. Se arma en segundos sin necesidad de cinta en los laterales. Resiste apilado rudo en paqueterías.
+							</p>
+
+							<!-- Dimension Selector -->
+							<div class="control-row">
+								<label for="select-measure" class="control-label">Medida:</label>
+								<select id="select-measure" class="custom-select-box">
+									<option value="Chica: 15 × 15 × 10 cm (Joyería / Accesorios)" data-price="12.00">Chica: 15 × 15 × 10 cm (Joyería / Accesorios)</option>
+									<option value="Mediana: 25 × 20 × 12 cm (Ropa / Calzado / Estándar)" data-price="15.50" selected>Mediana: 25 × 20 × 12 cm (Ropa / Calzado / Estándar)</option>
+									<option value="Grande: 35 × 25 × 18 cm (Múltiples prendas / Kits)" data-price="21.00">Grande: 35 × 25 × 18 cm (Múltiples prendas / Kits)</option>
+									<option value="Jumbo: 45 × 35 × 25 cm (Paquetes voluminosos)" data-price="29.00">Jumbo: 45 × 35 × 25 cm (Paquetes voluminosos)</option>
+									<option value="custom" data-price="0">Personalizada: Dimensiones a tu medida (Largo × Ancho × Alto)</option>
+								</select>
+							</div>
+
+							<!-- Custom Dimension Input Box (Conditional) -->
+							<div id="custom-measure-box" class="custom-dimension-panel" style="display: none;">
+								<span class="custom-panel-title">Indica tus medidas interiores requeridas (cm):</span>
+								<div class="custom-dim-grid">
+									<div class="dim-field">
+										<label for="custom-length">Largo (cm):</label>
+										<input type="number" id="custom-length" min="5" max="200" placeholder="Ej. 30" />
+									</div>
+									<div class="dim-field">
+										<label for="custom-width">Ancho (cm):</label>
+										<input type="number" id="custom-width" min="5" max="200" placeholder="Ej. 20" />
+									</div>
+									<div class="dim-field">
+										<label for="custom-height">Alto (cm):</label>
+										<input type="number" id="custom-height" min="3" max="200" placeholder="Ej. 15" />
+									</div>
+								</div>
+								<p class="custom-dim-hint">
+									Fabricamos suajes y calibraciones a medida desde 100 piezas. Cotizamos costo exacto por WhatsApp.
+								</p>
+							</div>
+
+							<!-- Quantity Selector -->
+							<div class="control-row">
+								<label for="select-quantity" class="control-label">Cantidad:</label>
+								<select id="select-quantity" class="custom-select-box">
+									<option value="50" data-disc="1.0">50 piezas (Mínimo de taller)</option>
+									<option value="100" data-disc="0.92">100 piezas (8% de descuento)</option>
+									<option value="250" data-disc="0.85" selected>250 piezas (15% de descuento)</option>
+									<option value="500" data-disc="0.78">500 piezas (22% de descuento por mayoreo)</option>
+									<option value="1000" data-disc="0.70">1,000+ piezas (Precio especial de fábrica)</option>
+								</select>
+							</div>
+
+							<!-- Custom Print Option -->
+							<div class="control-row radio-row">
+								<span class="control-label">Impresión:</span>
+								<div class="radio-deck">
+									<label class="custom-radio">
+										<input type="radio" name="pack-print" value="Lisa sin impresión" checked />
+										<span>Kraft liso (Sin logo)</span>
+									</label>
+									<label class="custom-radio">
+										<input type="radio" name="pack-print" value="Con tu logo a 1 tinta" />
+										<span>Con tu logo personalizado (+estampado)</span>
+									</label>
+								</div>
+							</div>
+
+							<!-- Real-time Cost Breakdown -->
+							<div class="live-price-strip">
+								<div class="price-data-group">
+									<span class="price-label">Precio por pieza:</span>
+									<span id="display-unit-price" class="unit-price-figure">$13.18 MXN</span>
+								</div>
+								<div class="price-data-group total-group">
+									<span class="price-label">Total estimado:</span>
+									<span id="display-total-price" class="total-price-figure">$3,293.75 MXN</span>
+								</div>
+							</div>
+
+							<!-- Direct WhatsApp Action Button -->
+							<div class="workbench-actions">
+								<button type="button" id="btn-request-pack" class="btn-dispatch-whatsapp">
+									<svg class="wa-icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.187-2.59-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.075-2.22-.562-1.821-.762-2.996-2.614-3.087-2.734-.09-.12-.738-.981-.738-1.872 0-.891.468-1.328.634-1.507.167-.18.365-.225.486-.225.122 0 .243.002.35.006.113.005.263-.042.412.316.155.375.529 1.29.575 1.385.047.094.078.204.016.326-.063.123-.094.2-.187.311-.094.113-.197.251-.282.338-.094.094-.191.196-.082.383.109.188.483.797 1.037 1.289.712.635 1.312.831 1.499.925.187.093.297.078.406-.047.11-.125.469-.546.594-.734.125-.187.25-.156.422-.093.172.062 1.09.514 1.277.608.188.094.312.14.359.219.047.078.047.453-.097.858z"/></svg>
+									<span>Pedir este modelo por WhatsApp</span>
+								</button>
+								<span class="workbench-footnote">
+									Cotización instantánea al +52 56 2580 9077. Confirmamos existencias, tiempos de entrega y recolección en taller.
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SECTION 3: EDITORIAL CATALOG MATRIX -->
+		<section id="catalogo" class="catalog-matrix">
+			<div class="container">
+				<div class="matrix-heading-wrap">
+					<h2 class="matrix-title">Tres familias de empaque fabricadas en CDMX</h2>
+					<p class="matrix-intro">
+						Fabricamos soluciones en cartón corrugado kraft y papel biodegradable, diseñadas para resistir transportación y dar presencia profesional a tu marca.
+					</p>
+				</div>
+
+				<div class="matrix-cards-deck">
+					<!-- Card 1 -->
+					<div class="matrix-card">
+						<div class="card-photo-box">
+							<img src="public/img/box_ecommerce.jpg" alt="Cajas corrugadas kraft para e-commerce" class="card-photo" loading="lazy" width="480" height="320" />
+							<span class="card-badge-top">E-Commerce y Logística</span>
+						</div>
+						<div class="card-content">
+							<h3 class="card-name">Caja Corrugada Autoarmable</h3>
+							<p class="card-text">
+								Cierre autoensamblable de alta rigidez. Protege tus artículos en traslados de paquetería y almacenamiento sin abrirse ni deformarse.
+							</p>
+							<div class="card-spec-grid">
+								<span><strong>Flauta:</strong> Flauta C / Micro</span>
+								<span><strong>Tiraje:</strong> Desde 50 piezas</span>
+								<span><strong>Uso:</strong> Calzado, ropa, envíos</span>
+							</div>
+							<a href="https://wa.me/525625809077?text=Hola%20La%20Boxeteria,%20quisiera%20cotizar%20la%20Caja%20Autoarmable" target="_blank" rel="noopener noreferrer" class="card-action-btn">
+								<span>Cotizar Autoarmable</span>
+								<svg class="svg-arrow sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+							</a>
+						</div>
+					</div>
+
+					<!-- Card 2 -->
+					<div class="matrix-card highlight-card">
+						<div class="card-photo-box">
+							<img src="public/img/box_mystery.jpg" alt="Caja sorpresa Mystery Box La Boxeteria" class="card-photo" loading="lazy" width="480" height="320" />
+							<span class="card-badge-top badge-yellow">Edición Especial</span>
+						</div>
+						<div class="card-content">
+							<h3 class="card-name">Caja Sorpresa Mystery Box</h3>
+							<p class="card-text">
+								El emblema de La Boxeteria. Diseñada para crear momentos de asombro con apertura envolvente y colores oficiales amarillo brillante y azul noche.
+							</p>
+							<div class="card-spec-grid">
+								<span><strong>Acabado:</strong> Cartón rígido forrado</span>
+								<span><strong>Cierre:</strong> Solapa de impacto</span>
+								<span><strong>Uso:</strong> Regalos, kits, unboxing</span>
+							</div>
+							<a href="https://wa.me/525625809077?text=Hola%20La%20Boxeteria,%20quiero%20cotizar%20Cajas%20Sorpresa%20Mystery%20Box" target="_blank" rel="noopener noreferrer" class="card-action-btn btn-yellow-action">
+								<span>Cotizar Caja Sorpresa</span>
+								<svg class="svg-arrow sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+							</a>
+						</div>
+					</div>
+
+					<!-- Card 3 -->
+					<div class="matrix-card">
+						<div class="card-photo-box">
+							<img src="public/img/box_food.jpg" alt="Cajas de cartón kraft para alimentos y pizza" class="card-photo" loading="lazy" width="480" height="320" />
+							<span class="card-badge-top badge-green">Grado Alimentos y Bolsas</span>
+						</div>
+						<div class="card-content">
+							<h3 class="card-name">Alimentos, Pizza y Bolsas Kraft</h3>
+							<p class="card-text">
+								Cartón resistente a grasas y vapor para pizzas o repostería, y bolsas kraft de alta tenacidad con asa torcida reforzada. 100% compostables.
+							</p>
+							<div class="card-spec-grid">
+								<span><strong>Material:</strong> Kraft virgen grado alimento</span>
+								<span><strong>Resistencia:</strong> Vapor y temperatura</span>
+								<span><strong>Uso:</strong> Pizzerías, repostería, boutiques</span>
+							</div>
+							<a href="https://wa.me/525625809077?text=Hola%20La%20Boxeteria,%20me%20interesa%20cotizar%20Cajas%20de%20Alimentos%20y%20Bolsas" target="_blank" rel="noopener noreferrer" class="card-action-btn">
+								<span>Cotizar Alimentos y Bolsas</span>
+								<svg class="svg-arrow sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SECTION 4: EL TALLER -->
+		<section id="taller" class="factory-section">
+			<div class="container factory-grid">
+				<div class="factory-story">
+					<h2 class="factory-title">Cartón directo de fábrica en la GAM</h2>
+					<p class="factory-lead">
+						Ubicados en la colonia San Felipe de Jesús, en la alcaldía Gustavo A. Madero, fabricamos empaques para quienes buscan calidad estructural real sin pagar sobreprecios de intermediarios.
+					</p>
+
+					<!-- Pillars with robust thematic badges instead of faux 01/02/03 numbering -->
+					<div class="factory-pillars-deck">
+						<div class="pillar-row">
+							<div class="pillar-stamp">VENTA DIRECTA</div>
+							<div class="pillar-body">
+								<h4>Trato y precio directo de fábrica</h4>
+								<p>Sin distribuidores de por medio. Te asesoramos en el calibre, flauta y dimensiones exactas para que tu producto no sufra daños en el camino.</p>
+							</div>
+						</div>
+
+						<div class="pillar-row">
+							<div class="pillar-stamp">MÍNIMOS REALES</div>
+							<div class="pillar-body">
+								<h4>Apoyo a emprendedores desde 50 piezas</h4>
+								<p>Las cartoneras industriales piden miles de piezas para venderte. Nosotros despachamos desde 50 piezas para que arranques tu proyecto con empaque profesional.</p>
+							</div>
+						</div>
+
+						<div class="pillar-row">
+							<div class="pillar-stamp">CARTÓN ECOLÓGICO</div>
+							<div class="pillar-body">
+								<h4>Cartón corrugado 100% biodegradable</h4>
+								<p>Fibras naturales reciclables que cuidan el planeta y proyectan un compromiso ambiental auténtico ante tus clientes.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="factory-sidebar-box">
+					<div class="taller-card">
+						<div class="taller-card-top">
+							<img src="public/img/laboxeteria.jpg" alt="Sello de taller La Boxeteria" class="seal-image" width="70" height="70" />
+							<div>
+								<span class="taller-title">LA BOXETERIA</span>
+								<span class="taller-sub">Taller y Fábrica en CDMX</span>
+							</div>
+						</div>
+
+						<div class="taller-meta-table">
+							<div class="meta-row">
+								<span class="meta-title">DIRECCIÓN:</span>
+								<span class="meta-desc">Apatzingán 16-B, Col. San Felipe de Jesús, GAM, C.P. 07510, Ciudad de México.</span>
+							</div>
+							<div class="meta-row">
+								<span class="meta-title">WHATSAPP / TELÉFONO:</span>
+								<span class="meta-desc">+52 56 2580 9077</span>
+							</div>
+							<div class="meta-row">
+								<span class="meta-title">HORARIO DE ATENCIÓN:</span>
+								<span class="meta-desc">Lunes a Viernes: 9:00 a 18:00 hrs<br />Sábados: 9:00 a 14:00 hrs</span>
+							</div>
+							<div class="meta-row">
+								<span class="meta-title">ENTREGAS:</span>
+								<span class="meta-desc">Recolección directa en taller o envío local en CDMX y flete nacional.</span>
+							</div>
+						</div>
+
+						<a href="https://wa.me/525625809077?text=Hola%20La%20Boxeteria,%20quisiera%20consultar%20existencias%20para%20pasar%20al%20taller" target="_blank" rel="noopener noreferrer" class="btn-yellow-cta full-width">
+							<span>Consultar existencias por WhatsApp</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SECTION 5: PREGUNTAS FRECUENTES (FAQ) -->
+		<section id="faq" class="faq-section">
+			<div class="container">
+				<div class="faq-header-block">
+					<h2 class="faq-title">Preguntas frecuentes sobre fabricación y pedidos</h2>
+					<p class="faq-subtitle">
+						Todo lo que necesitas saber sobre pedidos, personalización, entregas y compras de mayoreo.
+					</p>
+				</div>
+
+				<div class="faq-accordion-wrap">
+					<!-- FAQ Item 1 -->
+					<div class="faq-item is-open">
+						<button type="button" class="faq-trigger" aria-expanded="true">
+							<span class="faq-q-text">¿Cuál es el pedido mínimo y qué tiempos de entrega manejan?</span>
+							<svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+						</button>
+						<div class="faq-answer" style="max-height: 200px;">
+							<div class="faq-answer-inner">
+								<p>
+									En modelos de catálogo estándar nuestro mínimo es de <strong>50 piezas</strong> para modelos lisos. Para cajas con existencia en bodega la entrega o recolección es en 24 a 48 horas hábiles. Para tirajes impresos o pedidos de mayoreo el tiempo estimado es de 5 a 8 días hábiles.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- FAQ Item 2 -->
+					<div class="faq-item">
+						<button type="button" class="faq-trigger" aria-expanded="false">
+							<span class="faq-q-text">¿Fabrican cajas en medidas personalizadas para mi producto?</span>
+							<svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+						</button>
+						<div class="faq-answer">
+							<div class="faq-answer-inner">
+								<p>
+									Sí. Diseñamos y cortamos suajes con las dimensiones milimétricas exactas de tu producto (largo, ancho y alto) a partir de <strong>100 piezas</strong>. Puedes seleccionar «Personalizada» en nuestro cotizador o enviarnos las medidas por WhatsApp para calcularte costo de suaje y pieza.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- FAQ Item 3 -->
+					<div class="faq-item">
+						<button type="button" class="faq-trigger" aria-expanded="false">
+							<span class="faq-q-text">¿Cómo se entregan las cajas y cómo funcionan los envíos?</span>
+							<svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+						</button>
+						<div class="faq-answer">
+							<div class="faq-answer-inner">
+								<p>
+									Todas las cajas autoarmables se entregan <strong>extendidas y en paquetes flejados</strong> de 25 o 50 piezas para optimizar espacio y evitar maltratos en el traslado. Puedes recoger sin costo directamente en nuestro taller en la GAM, o coordinamos flete local en CDMX y envíos por paquetería consolidada a toda la República Mexicana.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- FAQ Item 4 -->
+					<div class="faq-item">
+						<button type="button" class="faq-trigger" aria-expanded="false">
+							<span class="faq-q-text">¿Qué requisitos necesito para imprimir mi logotipo?</span>
+							<svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+						</button>
+						<div class="faq-answer">
+							<div class="faq-answer-inner">
+								<p>
+									Imprimimos en flexografía directa a 1 o 2 tintas. Necesitamos tu logotipo en formato vectorial (PDF en curvas, Illustrator .AI o EPS). Si solo tienes imagen en alta resolución, nuestro equipo técnico te asesora para verificar si es apto para grabado en cliché de goma.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- FAQ Item 5 -->
+					<div class="faq-item">
+						<button type="button" class="faq-trigger" aria-expanded="false">
+							<span class="faq-q-text">¿Cuáles son los métodos de pago y emiten factura fiscal?</span>
+							<svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+						</button>
+						<div class="faq-answer">
+							<div class="faq-answer-inner">
+								<p>
+									Aceptamos transferencias bancarias (SPEI), depósitos en ventanilla y pago en efectivo al recoger en taller. Emitimos factura fiscal electrónica (CFDI) con IVA desglosado para empresas, pymes y personas físicas.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SECTION 6: SOCIAL PROOF & LOCATION -->
+		<section id="ubicacion" class="location-banner">
+			<div class="container">
+				<!-- Social Proof Trust Strip -->
+				<div class="trust-endorsement-deck">
+					<div class="trust-badge-label">EMPRENDEDORES Y MARCAS EN MÉXICO</div>
+					<div class="trust-endorsement-grid">
+						<div class="endorsement-card">
+							<span class="endorsement-verified">COMPRA VERIFICADA · CALZADO</span>
+							<p class="endorsement-quote">
+								«Nos urgían 100 cajas para calzado con medida no estándar. En otras cartoneras nos pedían 2,000 piezas; en La Boxeteria nos atendieron el mismo día y recogimos en su taller.»
+							</p>
+							<span class="endorsement-author">Rodrigo V. · Marca de Calzado Urbano, CDMX</span>
+						</div>
+						<div class="endorsement-card">
+							<span class="endorsement-verified">COMPRA VERIFICADA · E-COMMERCE</span>
+							<p class="endorsement-quote">
+								«Las cajas autoarmables resisten perfecto las paqueterías de Mercado Libre sin aplastarse ni una sola vez. Excelente calibre de cartón corrugado.»
+							</p>
+							<span class="endorsement-author">Mariana S. · E-Commerce de Cosmética Natural</span>
+						</div>
+						<div class="endorsement-card">
+							<span class="endorsement-verified">COMPRA VERIFICADA · ALIMENTOS</span>
+							<p class="endorsement-quote">
+								«Compramos cajas para pizzas artesanales y empaques de repostería. El cartón no se reblandece con el vapor y el precio directo de fábrica hace la diferencia.»
+							</p>
+							<span class="endorsement-author">Chef David M. · Pizzería Artesanal, GAM</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Location & Map Plate -->
+				<div class="location-plate">
+					<div class="location-left">
+						<h2 class="location-heading">Visítanos en taller o cotiza tu medida especial</h2>
+						<p class="location-text">
+							Atención directa de taller en la colonia San Felipe de Jesús, alcaldía Gustavo A. Madero. A minutos de Av. Gran Canal y Periférico Río de los Remedios.
+						</p>
+						
+						<!-- Interactive Embedded Google Maps -->
+						<div class="map-embed-container">
+							<iframe 
+								title="Ubicación de La Boxeteria en San Felipe de Jesús, GAM, CDMX"
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.34151745427!2d-99.0716616!3d19.4839556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fb9699caef89%3A0xb69661413a96739b!2sApatzingan%2016B%2C%20San%20Felipe%20de%20Jes%C3%BAs%2C%20Gustavo%20A.%20Madero%2C%2007510%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1710000000000!5m2!1ses!2smx" 
+								width="100%" 
+								height="260" 
+								style="border:0;" 
+								allowfullscreen="" 
+								loading="lazy" 
+								referrerpolicy="no-referrer-when-downgrade">
+							</iframe>
+						</div>
+
+						<div class="location-button-group">
+							<a href="https://wa.me/525625809077?text=Hola%20La%20Boxeteria,%20tengo%20un%20proyecto%20especial%20de%20cajas" target="_blank" rel="noopener noreferrer" class="btn-location-primary">
+								<svg class="wa-icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.187-2.59-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.075-2.22-.562-1.821-.762-2.996-2.614-3.087-2.734-.09-.12-.738-.981-.738-1.872 0-.891.468-1.328.634-1.507.167-.18.365-.225.486-.225.122 0 .243.002.35.006.113.005.263-.042.412.316.155.375.529 1.29.575 1.385.047.094.078.204.016.326-.063.123-.094.2-.187.311-.094.113-.197.251-.282.338-.094.094-.191.196-.082.383.109.188.483.797 1.037 1.289.712.635 1.312.831 1.499.925.187.093.297.078.406-.047.11-.125.469-.546.594-.734.125-.187.25-.156.422-.093.172.062 1.09.514 1.277.608.188.094.312.14.359.219.047.078.047.453-.097.858z"/></svg>
+								<span>WhatsApp: 56 2580 9077</span>
+							</a>
+							<a href="https://maps.google.com/?q=Apatzingan+16-B+San+Felipe+de+Jesus+CDMX" target="_blank" rel="noopener noreferrer" class="btn-location-secondary">
+								<span>Ver en Google Maps →</span>
+							</a>
+							<a href="https://www.facebook.com/laboxteria/" target="_blank" rel="noopener noreferrer" class="btn-location-secondary">
+								<span>Facebook oficial →</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="location-right">
+						<div class="postal-card-stencil">
+							<span class="postal-title">DIRECCIÓN DE TALLER:</span>
+							<p class="postal-body">
+								<strong>LA BOXETERIA</strong><br />
+								Apatzingán 16-B, San Felipe de Jesús<br />
+								Alcaldía Gustavo A. Madero, C.P. 07510<br />
+								Ciudad de México, México.
+							</p>
+							<div class="postal-foot">
+								<span>Atención directa de fábrica · Venta desde 50 piezas</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="poster-footer">
+		<div class="container footer-layout">
+			<div class="footer-left-col">
+				<div class="footer-brand-lockup">
+					<img src="public/img/laboxeteria.jpg" alt="Logo La Boxeteria" class="brand-seal sm" width="40" height="40" />
+					<span class="footer-logo-title">LA BOXETERIA</span>
+				</div>
+				<p class="footer-tagline">
+					Fábrica de cajas de cartón corrugado, empaques y bolsas kraft en la Ciudad de México.
+				</p>
+			</div>
+
+			<div class="footer-nav-col">
+				<a href="#inicio">Inicio</a>
+				<a href="#calculador">Cotizador</a>
+				<a href="#catalogo">Catálogo</a>
+				<a href="#taller">El Taller</a>
+				<a href="#faq">Preguntas</a>
+				<a href="#ubicacion">Ubicación</a>
+				<a href="https://www.facebook.com/laboxteria/" target="_blank" rel="noopener noreferrer">Facebook</a>
+			</div>
+
+			<div class="footer-right-col">
+				<p>© 2026 La Boxeteria. Todos los derechos reservados.</p>
+				<p class="footer-made-in">Fabricado con orgullo en GAM, Ciudad de México</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- PERSISTENT FLOATING WHATSAPP BUTTON -->
+	<a href="https://wa.me/525625809077?text=Hola%20La%20Boxeteria,%20quisiera%20cotizar%20un%20pedido" target="_blank" rel="noopener noreferrer" class="floating-wa-pill" aria-label="Escribir por WhatsApp a La Boxeteria">
+		<svg class="wa-icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.187-2.59-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.075-2.22-.562-1.821-.762-2.996-2.614-3.087-2.734-.09-.12-.738-.981-.738-1.872 0-.891.468-1.328.634-1.507.167-.18.365-.225.486-.225.122 0 .243.002.35.006.113.005.263-.042.412.316.155.375.529 1.29.575 1.385.047.094.078.204.016.326-.063.123-.094.2-.187.311-.094.113-.197.251-.282.338-.094.094-.191.196-.082.383.109.188.483.797 1.037 1.289.712.635 1.312.831 1.499.925.187.093.297.078.406-.047.11-.125.469-.546.594-.734.125-.187.25-.156.422-.093.172.062 1.09.514 1.277.608.188.094.312.14.359.219.047.078.047.453-.097.858z"/></svg>
+		<span class="floating-wa-text">Cotiza por WhatsApp</span>
+	</a>
+
+	<!-- Vanilla JS Script -->
+	<script src="public/js/index.js"></script>
+</body>
+
+</html>
